@@ -76,6 +76,14 @@ Type: `string`
 
 Default: `"1"`
 
+#### max\_pods\_per\_node
+
+Description: The maximum number of pods per node in this node pool.
+
+Type: `string`
+
+Default: `"110"`
+
 #### machine\_type
 
 Description: The machine type of nodes in the pool.
