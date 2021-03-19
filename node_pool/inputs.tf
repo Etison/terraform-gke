@@ -15,6 +15,11 @@ variable "initial_node_count" {
   default     = "1"
 }
 
+variable "max_pods_per_node" {
+  description = "The maximum number of pods per node in this node pool."
+  default     = "110"
+}
+
 variable "min_node_count" {
   description = "Minimum number of nodes for autoscaling, per availability zone."
 }

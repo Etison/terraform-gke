@@ -48,6 +48,7 @@ resource "google_container_node_pool" "node_pool" {
   location           = var.region
   version            = var.kubernetes_version
   initial_node_count = var.initial_node_count
+  max_pods_per_node  = var.max_pods_per_node
 
   autoscaling {
     min_node_count = var.min_node_count
@@ -82,4 +83,3 @@ resource "google_container_node_pool" "node_pool" {
     create_before_destroy = true
   }
 }
-
